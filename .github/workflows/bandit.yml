@@ -33,7 +33,7 @@ jobs:
       # Step 4: Run Bandit on the codebase
       - name: Run Bandit Security Linter
         run: |
-          bandit -r . -f txt -o bandit_report.txt --exit-zero
+          bandit -r . -f txt -o ./bandit_report.txt --exit-zero
 
       # Step 5: Upload Bandit report as an artifact
       - name: Upload Bandit report
